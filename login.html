@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Naresh institute and technologies</title>
+    <style>
+         header{
+              text-align: center;
+              background-color: white;
+              text-shadow: 2px 2px 2px gray;
+              margin-top: 20px;
+              margin-bottom: 20px;
+        }
+        nav{
+            display:flex;
+            font-size: 8;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color:white;
+            height: 80px;
+           
+           
+        }
+        nav span{
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 15px;
+            
+        }
+        a{
+          text-decoration: none;
+          color:white;
+          font-size: 16px;
+        }
+    
+        .text{
+            align-items: center;
+            text-align: center;
+            color:gray;
+            margin-left: 450px;
+            font-size:16px;
+            margin-top: 5px;
+           
+       }
+       nav li{
+        list-style: none;
+       }
+       
+        
+         main{
+            background-image: url("/public/project/job.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            height:550px;
+            width:100%;
+            }
+       .shades-background{
+                background-color: rgba(253, 250, 250, 0.3);
+                height: 500px;
+         }
+         .container{
+             height: 350px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+          form{
+           
+            border:2px solid gray;
+            box-shadow: 4px 4px 4px rgb(8, 8, 8);
+            padding:20px;
+            margin: 40px;
+            align-items: center;
+            margin-top: 150px;
+            width:380px;
+            
+
+
+          }
+         h3{              
+         text-shadow: 2px 2px 2px black;
+          font-size: 23px;
+          text-align: center;
+        }
+        .form-details{
+          align-items: center;
+          
+                
+         }
+
+          div{
+            margin-bottom: 30px;
+          }
+          
+        
+          div span{
+            font-size: 23px;
+            margin-left: 2px;
+            
+           
+          }
+          .signup-button span{
+            margin-right: 30px;
+            font-size: 19px;
+          }
+          .txt{
+            background-color: brown;
+            color:white;
+             
+          }
+          .form-img{
+            text-align: right;
+            margin-top: -230px;
+            margin-right: 200px;
+            
+          }
+          
+        footer{
+         height:250px;
+         background-color: rgb(27, 26, 26);
+         color:white;
+         margin: 5px;
+         
+        
+      }
+      .text33{
+        margin-bottom: 20px;
+        margin-top: 15px;
+        text-shadow: 2px 2px 2px gray;
+        font-size: 18px;
+      }
+     
+      .text34{
+        display: grid;
+        grid-template-columns: 3fr 3fr 6fr;
+        margin-left: 40px;
+      }
+      
+      .text35 span{
+        font-size: 15px;
+      }
+      
+        </style>
+        </head>
+    <body>
+      
+
+        <header>
+            <font face="Arial"  color="black" size="6">Naresh Institute and Technologies</font>
+         </header>
+          <section>
+             <nav>
+                <span ><a href="home.html"  target="bodyframe"><span class="bi bi-house">Home</span</a></span>
+                <span><a href="about.html" target="bodyframe"><span class="bi bi-question-circle">About</span></a></span>
+                <span><a href="Service.html" target="bodyframe"><span class="bi bi-question-circle">Service</span></a></span>
+                <span><a href="contact.html" target="bodyframe"><span class="bi bi-phone">Contactus</span></a></span>
+                <div class="text">
+                  <ul>
+                <span><a href="login.html"><span class="bi bi-box-arrow-in-right"></span>Sign-in</a></span>
+                 <span><a href="sign-up.html"><span class="bi bi-person-plus-fill"></span>Sign-up</a></span>
+                 <li><a href="pwd.html"><Span class="bi bi-unlock"></span>Change Password</a></li>
+                  </ul>
+                </div>
+          </nav>
+          </section>
+          <main>
+            <div class="shades-background">
+              <div class="container">
+            <form>
+               <div class="form-details">
+                <h3>Please Login Your Account</h3>
+               
+                <label for="email" class="form-label">Email id:</label>
+                <div class="input-group  ">
+                 <span class="bi bi-person txt"></span>
+                 <span class="w-75"><input type="text" class="form-control w-100" placeholder="Email Id"></span>
+                 <span class="bi bi-star txt"></span>
+               </div>
+              
+               
+                <label for="email" class="form-label">Password:</label>
+                <div class="input-group ">
+                 <span class="bi bi-lock txt"></span>
+                 <span class="w-75"><input type="text" class="form-control " placeholder="Password"></span>
+                 <span class="bi bi-star txt"></span>
+               </div>
+               <div class="signup-button">
+                <span><button class="btn btn-warning "><span class="bi bi-person-plus"></span><a href="sign-up.html">Sign Up</a></button></span>
+                <span><button class="btn btn-success"><span class="bi bi-box-arrow-in-right"></span>Sign In</button></span>
+               </div>
+               </div>
+             </form>
+            </div>
+
+            <div class="form-img">
+              <img src="/public/project/log.gif"  height="200">
+            </div>
+            </div>
+          </main>
+
+         
+          <footer>
+            <div align="center" class="text33">
+                <font face="arial" size="5" color="white">Naresh Technologies</font>
+            </div>
+            <br>
+            <br>
+            <div class="text34">
+            <div class="text35">
+              <ul>
+                <li><span class="bi bi-facebook">Facebook</span></li>
+                <li><span class="bi bi-google">Google</span></li>
+                <li><span class="bi bi-twitter">Twitter</span></li>
+                <li><span class="bi bi-youtube">Youtube</span></li>
+              </ul>
+            </div>
+            <div class="text35">
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="text35">
+              <ul>
+                <li>Name:Naresh institue</li>
+                <li>Email:info@nareshit.com</li>
+                <li>Contact : +91-xxxxxxxxxx</li>
+                <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+              </ul>
+            </div>
+            </div>
+          
+           </footer>
+
+           </body>
+           </html>
