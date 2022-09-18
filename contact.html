@@ -52,7 +52,9 @@
       
       
         main{
-            height:700px;
+           height:700px;
+           
+  
             
         }
         
@@ -65,12 +67,13 @@
         }
 
         .container{
-            display: grid;
-            grid-template-columns: 4fr 8fr;
+            display: flex;
+            justify-content: space-between;
             height:400px;
             margin-bottom: 0px;
         }
         .text2{
+        
             font-size: 18px;
             font-family: Arial, Helvetica, sans-serif;
             margin: 20x;
@@ -86,13 +89,10 @@
             margin-bottom: 18px;
         }
 
-        .text3{
-            margin-top:-60px;
-            margin-left: 200px;
-        }
         .text3 img{
             border:1px solid rgb(204, 197, 197);
             box-shadow: 1px 1px 1px rgb(238, 227, 227);
+            margin-top: -40px;
         }
 
 
@@ -142,23 +142,25 @@
                     </div>
               </nav>
               <main>
-               <div align="left"class="text1">
-                <font face="arial" size="5" color="black">Contact details</font>
-               </div>
+                <div align="left" class="text1">
+                  <font face="arial" size="5" color="black">Contact details</font>
+                  </div>
+              <div class="container">
+
                 
-               <div class="container">
-               <div align="left" class="text2">
+               <span align="left" class="text2">
                  <ul>
                     <li><span class="a">Name:</span><span class="b">Naresh Technologies</span></li>
                     <li><span class="a">Email id:</span><span class="b"> info@nareshit.com</span></li>
                     <li><span class="a">Contact Number:</span><span class="b">+91-xxxxxxxxxx</span></li>
                     <li><span class="a">Address:</span><span class="b">Hyderabad, India</span></li>
                  </ul>
-               </div>
-                
-               <div class="text3">
-                <img src="public/project/Contactus3.jpg" width="600px" height="350px">
-               </div>
+                </span>
+               <span class="text3">
+                <img src="public/project/Contactus3.jpg" width="600" height="350">
+               </span>
+              
+              
                </div>
             </main>
          </section>
