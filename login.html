@@ -120,10 +120,13 @@
             margin-top: -230px;
             
           }
-          .btn1 :disabled{
+          .signin:hover
+          {
             cursor:not-allowed;
             background-color: gray;
             color:white;
+            font-size: 12px;
+            width:50px;
     
           }
           
@@ -198,8 +201,10 @@
                </div>
                <div class="signup-button">
                 <span><button class="btn btn-warning "><span class="bi bi-person-plus"></span><a href="sign-up.html">Sign Up</a></button></span>
-                <span><button class="btn btn-success btn1 disabled "><span class="bi bi-box-arrow-in-right"></span>Sign In</button></span>
+                <span class="signin" >
+                  <button class="btn btn-success " disabled><span class="bi bi-box-arrow-in-right"></span>Sign In</button></span>
                </div>
+               
                </div>
              </form>
             </div>
