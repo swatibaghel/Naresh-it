@@ -68,6 +68,59 @@ div span{
 .img{
     margin-top: -300px;
 }
+#asterik {
+   font-size: 15px;
+ color:red;
+}
+#username:invalid+div{
+  display: block;
+  color:red;
+  font-size: 13px;
+}
+#username:valid+div{
+   display: none;
+}
+#username+div{
+  display: none;
+}
+
+#useremail+div{
+  display: none;
+}
+#useremail:invalid+div{
+  display: block;
+  color:red;
+  font-size: 13px;
+}
+#useremail:valid+div{
+  display: none;
+}
+
+#usermobile+div{
+  display: none;
+}
+#usermobile:invalid+div{
+  display: block;
+  color:red;
+  font-size: 13px;
+}
+#usermobile:valid+div{
+  display: none;
+}
+#usepwd+div{
+  display: none;
+ 
+}
+#userpwd:invalid+div{
+  display: block;
+  color:red;
+  font-size: 13px;
+}
+#userpwd:valid+div{
+  display: none;
+}
+
+
 
 
 footer{
@@ -119,66 +172,71 @@ footer{
 
     <main>
         <form>
-            <h3>Registration Form</h3>
-            <div class="reg-body">
-            <div>
-            <label for="name" class="form-label">Full Name:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="name" name="name">
-            </div>
-            <div>
-            <label for="name" class="form-label">Email Id:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="Email id" name="name">
-            </div>
-            <div>
-            <label for="name" class="form-label">Mobile:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="Contact number" name="name">              
-            </div>
-            <div>
-            <label for="name" class="form-label">Date:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="Date" name="name">
-             </div>
-             <div>
-            <label for="name" class="form-label">Image:</label>
-            </div>
-            <div>
-            <input type="file" class="form-control">
-            </div>
-            <label for="name" class="form-label">Password:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="Password" name="name">              
-            </div>
-            <div>
-            <label for="name" class="form-label">Confirm Password:</label>
-            </div>
-            <div>
-            <input type="text" class="form-control" placeholder="Confirm Password" name="name">
-             </div>
-             <br>
-             <div>
-             <span><label for="name" class="form-label">Gender:</label></span>
-            <span><input type="radio" name="gender">male</span> 
-            <span><input type="radio" name="gender">Female</span> 
-             </div>
-             <div>
-             <input type="checkbox"> I have read and Accept the Terms and Conditions
-             </div>
-             <br>
-             <div>
-                <span>
-                    <button class="btn btn-warning">Already you have an account</button>
-                </span>
-                <span>
-                    <button class="btn btn-success">Register</button>
-                </span>
+          <h3>Registration Form</h3>
+          <div class="reg-body">
+          <div>
+          <label for="name" class="form-label">Full Name:<span id="asterik">*</span></label>
+          </div>
+          <div>
+            
+          <input type="text"  id="username" pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$&%^*])[a-zA-z0-9!@#$%^&*]{4,15}" class="form-control " placeholder="name" name="name">
+          <div>User Name Required and Enter Valid Username</div>
+          </div>
+          <div>
+          <label for="name" class="form-label">Email Id:<span id="asterik">*</span></label>
+          </div>
+          <div>
+          <input type="text"id="useremail" class="form-control"  pattern="(?=.*[A-Z])[A-Za-z0-9]{4,15}@gmail.com" placeholder="Email id" name="name">
+          <div>Enter Valid Email-id </div>
+          </div>
+          <div>
+          <label for="name"  class="form-label">Mobile:<span id="asterik">*</span></label>
+          </div>
+          <div>
+          <input type="text"  id="usermobile" class="form-control" pattern="\+91\d{10}"placeholder="Contact number" name="name">      
+          <div>Invalid Mobile</div>        
+          </div>
+          <div>
+          <label for="name" class="form-label">Date:<span id="asterik">*</span></label>
+          </div>
+          <div>
+          <input type="date" class="form-control" placeholder="Date" name="name">
+           </div>
+           <div>
+          <label for="name" class="form-label">Image:<span id="asterik">*</span></label>
+          </div>
+          <div>
+          <input type="file" class="form-control">
+          </div>
+          <label for="name"  class="form-label">Password:<span id="asterik">*</span></label>
+          </div>
+          <div>
+          <input type="text" id="userpwd" class="form-control"  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{4,15}" placeholder="Password" name="name">   
+          <div>Invalid Password</div>            
+          </div>
+          <div>
+          <label for="name" class="form-label">Confirm Password:</label>
+          </div>
+          <div>
+          <input type="text"  class="form-control" placeholder="Confirm Password" name="name">
+           </div>
+           <br>
+           <div>
+           <span><label for="name" class="form-label">Gender:<span id="asterik">*</span></label></span>
+          <span><input type="radio" name="gender">male</span> 
+          <span><input type="radio" name="gender">Female</span> 
+           </div>
+           <div>
+           <input type="checkbox"> I have read and Accept the Terms and Conditions
+           </div>
+           <br>
+           <div>
+              <span>
+                  <button class="btn btn-warning">Already you have an account</button>
+              </span>
+              <span>
+                  <button class="btn btn-success">Register</button>
+              </span>
              </div>
         </form>
 

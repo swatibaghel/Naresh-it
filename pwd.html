@@ -88,7 +88,20 @@
             text-shadow: 1px 1px 1px white;
           }
          
-
+          #usepwd+div{
+         display: none;
+         font-size: 13px;
+         }
+          #userpwd:invalid+div{
+        display: block;
+        color:red;
+        font-size: 13px;
+         }
+            #userpwd:valid+div{
+            display: none;
+            font-size: 13px;
+         }
+         
 
          footer{
          height:250px;
@@ -142,24 +155,28 @@
     <form>
       <h3>Registration Form</h3>
       <div>
-         <span class="input-group">
-          <span class="bi bi-star form1"></span>
-          <input type="text" class="form-control" placeholder="Current Password">
-          </span>
-      </div>
-      <div>
-        <span class="input-group ">
+        <span class="input-group">
          <span class="bi bi-star form1"></span>
-         <input type="text" class="form-control"  placeholder="New Password">
-        </span>
-         
+         <input type="text" id="userpwd" class="form-control" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{4,15}" placeholder="Current Password">
+         <div>Enter Valid Password</div>
+         </span>
      </div>
      <div>
-      <span class="input-group">
-       <span class="bi bi-star form1"></span>
-       <input type="text" class="form-control" placeholder="Confirm Password">
-      </span>
+       <span class="input-group ">
+        <span class="bi bi-star form1"></span>
+        <input type="text" id="userpwd" class="form-control" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{4,15}" placeholder="New Password">
+        <div>Enter Valid Password</div>
+       </span>
+        
     </div>
+    <div>
+     <span class="input-group">
+      <span class="bi bi-star form1"></span>
+      <input type="text" id="userpwd" class="form-control" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{4,15}" placeholder="Confirm Password">
+      <div>Enter Valid Password</div> 
+     </span>
+       
+   </div>
    <div>
     <button class="btn btn-success btn">Change Password</button>
    </div>
